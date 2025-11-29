@@ -1,0 +1,27 @@
+fastapi
+sqlalchemy
+pymysql
+pydantic
+uvicorn[standard]
+
+# Database + Async ORM
+sqlalchemy[asyncio]
+asyncpg
+
+# Pydantic (with email validation support)
+pydantic[email]
+
+# Authentication & Security
+passlib[bcrypt]
+python-jose[cryptography]
+
+# Environment variables config
+python-dotenv
+
+# For sending emails (optional but common)
+aiosmtplib
+
+# Testing (optional)
+httpx
+pytest
+python-multipart
