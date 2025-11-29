@@ -61,7 +61,7 @@ export default function InstituteTendersPage() {
   useEffect(() => {
     if (!selectedTender) {
       setLoading(true);
-      fetch("http://127.0.0.1:8000/api/v1/tenders/institute", {
+      fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/tenders/institute", {
         headers: { Authorization: `Bearer ${token}` },
       })
         .then(res => res.ok ? res.json() : Promise.reject("Failed to fetch tenders."))
@@ -73,7 +73,7 @@ export default function InstituteTendersPage() {
 
   const publishTender = async (tenderId) => {
     try {
-      const res = await fetch(`http://127.0.0.1:8000/api/v1/tenders/${tenderId}/publish`, {
+      const res = await fetch(`https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/tenders/${tenderId}/publish`, {
         method: "PATCH", headers: { Authorization: `Bearer ${token}` },
       });
       if (!res.ok) throw new Error("Failed to publish tender");
@@ -91,7 +91,7 @@ export default function InstituteTendersPage() {
       return;
     }
     try {
-      const res = await fetch(`http://127.0.0.1:8000/api/v1/awards/`, {
+      const res = await fetch(`https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/awards/`, {
         method: "POST",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
         body: JSON.stringify({ bid_id: bidId }),

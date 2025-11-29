@@ -7,7 +7,7 @@ import {
 } from "react-icons/fi";
 
 // --- API URL ---
-const API_URL = "http://localhost:8000/api/v1";
+const API_URL = "https://792hpzm4-8000.inc1.devtunnels.ms/api/v1";
 
 // Custom Hook for Password Visibility
 const usePasswordVisibility = () => {

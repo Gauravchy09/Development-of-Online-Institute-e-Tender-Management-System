@@ -24,7 +24,7 @@ export default function VendorNotifications() {
       const now = new Date();
 
       // Fetch tenders
-      const tendersRes = await fetch("http://127.0.0.1:8000/api/v1/tenders/all", {
+      const tendersRes = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/tenders/all", {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -34,7 +34,7 @@ export default function VendorNotifications() {
       // Fetch user's bids
       let myBidsData = [];
       try {
-        const bidsRes = await fetch("http://127.0.0.1:8000/api/v1/bids/", {
+        const bidsRes = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/bids/", {
           headers: { Authorization: `Bearer ${token}` }
         });
         if (bidsRes.ok) {

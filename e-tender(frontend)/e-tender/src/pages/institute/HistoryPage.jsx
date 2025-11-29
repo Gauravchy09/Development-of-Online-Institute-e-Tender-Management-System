@@ -86,7 +86,7 @@ export default function HistoryPage() {
       setLoading(true);
       try {
         // Fetch tenders with bids and award information
-        const tendersRes = await fetch("http://127.0.0.1:8000/api/v1/tenders/institute", {
+        const tendersRes = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/tenders/institute", {
           headers: { Authorization: `Bearer ${token}` },
         });
         

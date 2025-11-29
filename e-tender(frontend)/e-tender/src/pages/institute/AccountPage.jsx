@@ -18,7 +18,7 @@ export default function AccountPage() {
       }
 
       try {
-        const response = await fetch("http://localhost:8000/api/v1/auth/me", {
+        const response = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/auth/me", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
