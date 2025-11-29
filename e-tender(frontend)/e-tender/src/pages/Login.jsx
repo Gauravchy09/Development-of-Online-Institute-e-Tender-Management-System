@@ -26,7 +26,7 @@ export default function Login() {
       formData.append("username", identifier);
       formData.append("password", password);
 
-      const res = await fetch("http://localhost:8000/api/v1/auth/login", {
+      const res = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: formData.toString(),

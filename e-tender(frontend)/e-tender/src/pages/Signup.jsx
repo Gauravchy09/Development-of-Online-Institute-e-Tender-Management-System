@@ -71,7 +71,7 @@ export default function Signup() {
     }
 
     try {
-      const res = await fetch("http://localhost:8000/api/v1/auth/signup", {
+      const res = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
