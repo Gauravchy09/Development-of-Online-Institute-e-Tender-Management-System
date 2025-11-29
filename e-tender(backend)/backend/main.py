@@ -15,7 +15,7 @@ origins = [
     "http://localhost:3000",  # A common alternative for React dev
     # You would add your deployed frontend's URL here for production
     # "https://your-app-name.vercel.app",
-    "https://development-of-online-institute-e-t.vercel.app",
+    "https://development-of-online-institute-e-t-seven.vercel.app",
     "https://792hpzm4-8000.inc1.devtunnels.ms"
 ]
 
