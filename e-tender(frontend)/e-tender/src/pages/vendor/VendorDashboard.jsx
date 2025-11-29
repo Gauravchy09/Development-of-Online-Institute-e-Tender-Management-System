@@ -30,7 +30,7 @@ export default function VendorDashboard() {
       return;
     }
 
-    fetch("http://localhost:8000/api/v1/auth/me", {
+    fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/auth/me", {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((res) => res.json())
@@ -45,7 +45,7 @@ export default function VendorDashboard() {
   const fetchNotifications = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8000/api/v1/notifications", {
+      const res = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/notifications", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
@@ -60,7 +60,7 @@ export default function VendorDashboard() {
   const fetchDashboardStats = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8000/api/v1/vendor/stats", {
+      const res = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/vendor/stats", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {

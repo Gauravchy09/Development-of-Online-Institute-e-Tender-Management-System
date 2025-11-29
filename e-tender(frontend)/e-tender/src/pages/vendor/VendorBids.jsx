@@ -14,8 +14,8 @@ export default function VendorBids() {
       setLoading(true);
       try {
         const [tendersRes, myBidsRes] = await Promise.all([
-          fetch("http://127.0.0.1:8000/api/v1/tenders/all", { headers: { Authorization: `Bearer ${token}` } }),
-          fetch("http://127.0.0.1:8000/api/v1/bids/", { headers: { Authorization: `Bearer ${token}` } })
+          fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/tenders/all", { headers: { Authorization: `Bearer ${token}` } }),
+          fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/bids/", { headers: { Authorization: `Bearer ${token}` } })
         ]);
 
         if (!tendersRes.ok || !myBidsRes.ok) throw new Error("Failed to fetch dashboard data.");

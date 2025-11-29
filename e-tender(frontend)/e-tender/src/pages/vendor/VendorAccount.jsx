@@ -26,7 +26,7 @@ export default function VendorAccount({ user: initialUser }) {
       try {
         // If no initial user, fetch user profile
         if (!initialUser) {
-          const userRes = await fetch("http://127.0.0.1:8000/api/v1/users/me", {
+          const userRes = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/users/me", {
             headers: { Authorization: `Bearer ${token}` }
           });
 
@@ -39,7 +39,7 @@ export default function VendorAccount({ user: initialUser }) {
         }
 
         // Fetch bids to calculate stats
-        const bidsRes = await fetch("http://127.0.0.1:8000/api/v1/bids/", {
+        const bidsRes = await fetch("https://792hpzm4-8000.inc1.devtunnels.ms/api/v1/bids/", {
           headers: { Authorization: `Bearer ${token}` }
         });
 
